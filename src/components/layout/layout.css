@@ -1,0 +1,73 @@
+:root {
+  --font-sans-serif: 'Google Sans', 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+
+  --yellow: #fbbc03;
+  --green: #33a853;
+  --red: #ea4335;
+  --white: #fff;
+
+  --b-blue: #0005df;
+  --b-green: #0cad4d;
+  --b-yellow: #f9ab00;
+  --b-red: #ea4335;
+
+  --blue-100: #d1e3fa;
+  --blue-200: #a3c7f6;
+  --blue-300: #76abf1;
+  --blue-400: #488fed;
+  --blue-500: #1a73e8;
+  --blue-600: #155cba;
+  --blue-700: #10458b;
+  --blue-800: #0a2e5d;
+  --blue-900: #05172e;
+
+  --gray-100: #f7fafc;
+  --gray-200: #edf2f7;
+  --gray-300: #e2e8f0;
+  --gray-400: #cbd5e0;
+  --gray-500: #a0aec0;
+  --gray-600: #718096;
+  --gray-700: #4a5568;
+  --gray-800: #2d3748;
+  --gray-900: #1a202c;
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--gray-900);
+  font-family: var(--font-mono);
+}
+
+#___gatsby > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  font-weight: normal;
+  font-display: fallback;
+  src: local('Google Sans'), url('../../assets/fonts/GoogleSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'Google Sans';
+  font-weight: 800;
+  font-display: fallback;
+  src: local('Google Sans'), url('../../assets/fonts/GoogleSans-Bold.ttf');
+}
