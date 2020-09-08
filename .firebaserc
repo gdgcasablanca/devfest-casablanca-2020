@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "devfest-casablanca-2020",
+    "develop": "devfest-casablanca-2020-dev"
+  }
+}
