@@ -20,5 +20,4 @@ jobs:
 
     - stage: deploy
       script:
-        - yarn build
         - bash scripts/deploy.sh
