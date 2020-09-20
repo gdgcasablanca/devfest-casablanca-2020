@@ -51,6 +51,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: white;
+}
+
+#___gatsby > div a {
+  color: var(--yellow);
 }
 
 .container {
