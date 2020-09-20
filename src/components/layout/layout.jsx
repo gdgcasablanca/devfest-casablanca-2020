@@ -1,12 +1,12 @@
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 
 import Header from '../header'
 import './layout.css'
-import { Helmet } from 'react-helmet'
 
-const Layout = memo(function Layout({ children }) {
+const Layout = memo(function Layout({ children, pageTitle }) {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,7 +25,7 @@ const Layout = memo(function Layout({ children }) {
           rel='stylesheet'
         />
       </Helmet>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={pageTitle ?? data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,
