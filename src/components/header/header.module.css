@@ -1,0 +1,23 @@
+.header {
+  background-color: white;
+}
+
+.innerHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a {
+  text-decoration: none;
+  border-block-end: 0.1em solid transparent;
+}
+
+.links a:hover,
+.links a:focus {
+  border-block-end-color: inherit;
+}
+
+.links a + a {
+  margin-inline-start: 1em;
+}

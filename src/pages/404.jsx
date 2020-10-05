@@ -8,9 +8,12 @@ const NotFoundPage = () => (
   <Layout>
     <SEO title='404: Not found' />
     <h1 style={{ textTransform: 'uppercase' }}>Page not found</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <p>We couldn&#39;t find what you were looking for ... the sadness.</p>
+
+    <br />
 
     <Link to='/'>Go back to the homepage</Link>
+    <p>Or send us an email at contact[at]gdgcasablanca.com</p>
   </Layout>
 )
 

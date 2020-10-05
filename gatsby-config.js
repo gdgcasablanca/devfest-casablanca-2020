@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Devfest Casablanca 2020',
-    description: 'Devfest Casablanca 2020',
+    title: 'Devfest Casablanca x Settat 2020',
+    description: 'Devfest  Casablanca x Settat 2020',
     author: '@gdgcasablanca',
   },
   plugins: [
