@@ -15,6 +15,10 @@ const footerLinks = [
         link: 'https://gdgcasablanca.com/',
       },
       {
+        label: 'GDG Settat',
+        link: 'https://gdgsettat.ma/',
+      },
+      {
         label: 'WTM Casablanca',
         link: 'https://wtm.gdgcasablanca.com/',
       },
