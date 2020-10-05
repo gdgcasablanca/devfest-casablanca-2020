@@ -20,9 +20,9 @@ const BeforeYouAsk = memo(function BeforeYouAsk() {
           </h3>
 
           <p>
-            GDG DevFest Casablanca brings together the world class experts in
-            Android, Web and Cloud technologies to Casablanca for 1 days of
-            sessions, workshops and showcases.
+            GDG DevFest Casablanca x Settat brings together the world class
+            experts in AI/ML, Android, Web and Cloud technologies to Moroccan
+            for 2 days of sessions, workshops and showcases.
           </p>
 
           <p>
