@@ -1,0 +1,30 @@
+.ticket {
+  background-color: var(--d-blue-400);
+  color: white;
+
+  padding: 3rem 0;
+}
+
+.innerTicket {
+  text-align: center;
+}
+
+.heading {
+  margin: 0;
+}
+
+.button {
+  padding: 0.8rem 1rem;
+  border: 1px solid;
+  display: inline-block;
+  margin-block-start: 1rem;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: white;
+  color: var(--d-blue-400);
+}

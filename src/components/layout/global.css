@@ -7,10 +7,16 @@
   --red: #ea4335;
   --white: #fff;
 
-  --b-blue: #0005df;
-  --b-green: #0cad4d;
-  --b-yellow: #f9ab00;
-  --b-red: #ea4335;
+  --d-blue-400: #0005df;
+  --d-blue-200: #4285f4;
+
+  --d-green-400: #0cad4d;
+  --d-green-200: #5bb974;
+
+  --d-yellow-400: #f9ab00;
+  --d-yellow-200: #fcc934;
+
+  --d-red-400: #ea4335;
 
   --blue-100: #d1e3fa;
   --blue-200: #a3c7f6;
@@ -31,6 +37,44 @@
   --gray-700: #4a5568;
   --gray-800: #2d3748;
   --gray-900: #1a202c;
+
+  --scale: 1.125;
+  /* Don't change the lines below, you only need to change the --scale above. */
+  --size-l-1: calc(1rem * var(--scale));
+  --size-l-2: calc(var(--size-l-1) * var(--scale));
+  --size-l-3: calc(var(--size-l-2) * var(--scale));
+  --size-l-4: calc(var(--size-l-3) * var(--scale));
+  --size-l-5: calc(var(--size-l-4) * var(--scale));
+  --size-l-6: calc(var(--size-l-5) * var(--scale));
+  --size-l-7: calc(var(--size-l-6) * var(--scale));
+  --size-s-1: calc(1rem / var(--scale));
+  --size-s-2: calc(var(--size-s-1) / var(--scale));
+  --size-s-3: calc(var(--size-s-2) / var(--scale));
+}
+
+h1,
+.h1 {
+  font-size: var(--size-l-5);
+}
+h2,
+.h2 {
+  font-size: var(--size-l-4);
+}
+h3,
+.h3 {
+  font-size: var(--size-l-3);
+}
+h4,
+.h4 {
+  font-size: var(--size-l-2);
+}
+h5,
+.h5 {
+  font-size: var(--size-l-1);
+}
+h6,
+.h6 {
+  font-size: 1rem;
 }
 
 * {
@@ -38,6 +82,7 @@
 }
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 html,
 body {
@@ -47,15 +92,29 @@ body {
   font-family: var(--font-mono);
 }
 
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}
+
 #___gatsby > div {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  color: white;
 }
 
-#___gatsby > div a {
-  color: var(--yellow);
+a {
+  color: var(--d-blue-400);
+}
+
+a.inverted {
+  color: white;
 }
 
 .container {

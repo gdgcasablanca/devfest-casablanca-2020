@@ -1,0 +1,63 @@
+.footer {
+  background-color: var(--d-blue-400);
+  color: white;
+  font-size: 18px;
+  padding: 3rem 0;
+}
+
+.footer hr {
+  margin: 2rem 0;
+  height: 1px;
+  border: 0;
+  background-color: currentColor;
+}
+
+.heading {
+  margin: 0;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.mainHeading {
+  margin-block-start: 0.4rem;
+  margin-block-end: 1rem;
+}
+
+.copy {
+  text-align: center;
+  font-size: 14px;
+  padding-block-start: 3rem;
+}
+
+.copy p {
+  margin: 0;
+}
+
+.linksBlockWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 1rem;
+
+  margin: 3rem 0;
+}
+
+.linksBlock h5 {
+  margin-bottom: 8px;
+  margin-top: 16px;
+  font-weight: 400;
+}
+.linksList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.linksList li {
+  margin-bottom: 4px;
+}
+.linksList li a.footerLink {
+  text-decoration: none;
+  border-block-end: 1px solid transparent;
+}
+.linksList li a.footerLink:hover {
+  border-block-end-color: currentColor;
+}

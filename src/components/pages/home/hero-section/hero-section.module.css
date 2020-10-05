@@ -1,0 +1,94 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 90vh;
+  overflow: hidden;
+
+  color: white;
+}
+.frameBar {
+  background-color: var(--d-yellow-400);
+  height: calc(14px + 2vw);
+  display: flex;
+  align-items: center;
+}
+
+.frameBar:after {
+  content: '';
+  position: relative;
+  display: block;
+  --size: calc(12px + 1vw);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background-color: var(--d-red-400);
+  margin-inline-start: 1vh;
+}
+
+.logoWrapper {
+  background-color: #fff;
+  padding: 6vh 4.5vh;
+  color: var(--d-blue-400);
+}
+
+.logoWrapper > svg {
+  width: 52vw;
+}
+
+@media (min-width: 890px) {
+  .logoWrapper > svg {
+    width: 42vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logoWrapper > svg {
+    width: 32vw;
+  }
+}
+
+.frame {
+  position: relative;
+  z-index: 0;
+}
+
+.frameShadow {
+  --border-size: 0.5vh;
+  --x: 4.8;
+  --y: 3.2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translate(calc(var(--x) * 1vh), calc(var(--y) * 1vh));
+  border: var(--border-size) solid var(--d-yellow-400);
+  z-index: -1;
+}
+
+.square {
+  --square-inset: calc(calc(var(--size) / -2) - calc(var(--border-size) / 2));
+  --size: calc(12px + 1vw);
+  width: var(--size);
+  height: var(--size);
+
+  background-color: var(--d-yellow-400);
+  position: absolute;
+}
+
+.squareRT {
+  top: var(--square-inset);
+  right: var(--square-inset);
+}
+.squareLT {
+  top: var(--square-inset);
+  left: var(--square-inset);
+}
+.squareRB {
+  bottom: var(--square-inset);
+  right: var(--square-inset);
+}
+.squareLB {
+  bottom: var(--square-inset);
+  left: var(--square-inset);
+}

@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "devfestcasablanca2020",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Devfest Casablanca 2020",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "GDG Casablanca <gdgwtmcasablanca@gmail.com>",
   "dependencies": {
+    "clsx": "^1.1.1",
     "gatsby": "^2.24.50",
     "gatsby-image": "^2.4.16",
     "gatsby-plugin-manifest": "^2.4.24",
@@ -20,10 +21,25 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.1",
+    "gatsby-plugin-eslint-v2": "^2.0.0-beta.0",
+    "gatsby-plugin-prettier-eslint": "^1.0.4",
+    "prettier": "^2.1.2"
   },
   "keywords": [
-    "gatsby"
+    "gdg",
+    "gdgcasablanca",
+    "devfest",
+    "devfest2020",
+    "devfestcasablanca",
+    "devfestcasablanca2020"
   ],
   "license": "0BSD",
   "scripts": {
@@ -36,9 +52,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/gdgcasablanca/devfest-casablanca-2020"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/gdgcasablanca/devfest-casablanca-2020/issues"
   }
 }
