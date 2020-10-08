@@ -6482,6 +6482,14 @@ gatsby-plugin-eslint-v2@^2.0.0-beta.0:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint-v2/-/gatsby-plugin-eslint-v2-2.0.0-beta.0.tgz#6c5748916c8cdd54f0c93a55cdc4e2e894b9b651"
   integrity sha512-LZxc82Ijw0P6nn6+3RkmcSnIoiqDppskVznyUYR7w1xUxf6ZwGB34LokXQWz21hUoRq0kEoYanGbs7dKeldOmw==
 
+gatsby-plugin-google-analytics@^2.3.17:
+  version "2.3.17"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.17.tgz#61207d253b69e8ab606ebff75e074c1774d108bb"
+  integrity sha512-0s8m2BPBBsccCIFE2rUl98Ir/JE273cyPwfFB1PrtNz6rVmbRrm8AWKJvGXlZiPAfMUuBhT39vCgTvrCDp4phw==
+  dependencies:
+    "@babel/runtime" "^7.11.2"
+    minimatch "3.0.4"
+
 gatsby-plugin-manifest@^2.4.24:
   version "2.4.30"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.4.30.tgz#a5edca7bdf898a6f06e33969ab4e21f7438438aa"
@@ -9503,7 +9511,7 @@ minimatch@3.0.3:
   dependencies:
     brace-expansion "^1.0.0"
 
-minimatch@^3.0.3, minimatch@^3.0.4:
+minimatch@3.0.4, minimatch@^3.0.3, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
