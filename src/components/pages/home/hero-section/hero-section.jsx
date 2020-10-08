@@ -2,6 +2,22 @@ import React, { memo, useEffect, useRef } from 'react'
 
 import styles from './hero-section.module.css'
 import GDGDevfestLogo from '../../../../assets/gdg-devfest.inline.svg'
+import CalendarIcon from '../../../../assets/icons/calendar.inline.svg'
+import CursorIcon from '../../../../assets/icons/cursor.inline.svg'
+import GibberishIcon from '../../../../assets/icons/gibberish.inline.svg'
+import GlobeIcon from '../../../../assets/icons/globe.inline.svg'
+import StarIcon from '../../../../assets/icons/star-1.inline.svg'
+import clsx from 'clsx'
+
+function getPosition({ t, b, r, l }) {
+  return {
+    position: 'absolute',
+    top: t,
+    left: l,
+    right: r,
+    bottom: b,
+  }
+}
 
 const HeroSection = memo(function HeroSection() {
   const frameRef = useRef()
@@ -36,6 +52,38 @@ const HeroSection = memo(function HeroSection() {
 
   return (
     <div className={styles.wrapper}>
+      <div className={styles.iconsWrapper}>
+        <CalendarIcon
+          width='68px'
+          className={clsx(styles.slow, styles.s6)}
+          style={getPosition({ t: '6%', l: '36%' })}
+        />
+        <CursorIcon
+          width='50px'
+          className={clsx(styles.slow)}
+          style={getPosition({ b: '30%', l: '14%' })}
+        />
+        <GibberishIcon
+          width='170px'
+          className={clsx(styles.slow, styles.s6)}
+          style={getPosition({ t: '10%', l: '6%' })}
+        />
+        <GibberishIcon
+          width='185px'
+          className={clsx(styles.slow, styles.s6)}
+          style={getPosition({ b: '24%', l: '66%' })}
+        />
+        <GlobeIcon
+          width='80px'
+          className={clsx(styles.slow)}
+          style={getPosition({ t: '20%', r: '12%' })}
+        />
+        <StarIcon
+          width='50px'
+          className={clsx(styles.slow, styles.s3)}
+          style={getPosition({ b: '40%', r: '8%' })}
+        />
+      </div>
       <div className={styles.frame}>
         <div className={styles.frameShadow} ref={frameRef}>
           <div className={[styles.square, styles.squareRT].join(' ')} />

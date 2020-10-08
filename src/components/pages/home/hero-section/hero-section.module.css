@@ -3,11 +3,24 @@
   justify-content: center;
   align-items: center;
 
+  background-color: var(--d-blue-400);
+  background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.15));
+
   height: 90vh;
   overflow: hidden;
 
   color: white;
 }
+
+.iconsWrapper {
+  position: absolute;
+  color: var(--blue-200);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 .frameBar {
   background-color: var(--d-yellow-400);
   height: calc(14px + 2vw);
@@ -91,4 +104,28 @@
 .squareLB {
   bottom: var(--square-inset);
   left: var(--square-inset);
+}
+
+.slow {
+  animation: moveSlow 4s infinite ease-in-out;
+}
+
+.slow.s6 {
+  animation-duration: 6.6s;
+}
+
+.slow.s3 {
+  animation-duration: 3.6s;
+}
+
+@keyframes moveSlow {
+  0% {
+    transform: translateY(-10%);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
 }
