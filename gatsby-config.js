@@ -37,6 +37,12 @@ module.exports = {
     },
     'gatsby-plugin-eslint-v2',
     'gatsby-plugin-prettier-eslint',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-139563322-2',
+      },
+    },
     // {
     //   resolve: ,
     //   options: {

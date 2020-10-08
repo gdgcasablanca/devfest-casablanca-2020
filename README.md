@@ -1,5 +1,5 @@
-# DevFest Casablanca 2020
+# Devfest Casablanca 2020
 
-The DevFest Casablanca 2020 website
+The Devfest Casablanca 2020 website
 
 Check it out here: [devfest-casablanca-2020.web.app](https://devfest-casablanca-2020.web.app/)

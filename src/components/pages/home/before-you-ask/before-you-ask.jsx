@@ -13,20 +13,20 @@ const BeforeYouAsk = memo(function BeforeYouAsk() {
             className={clsx(styles.heading)}
             style={{ fontSize: '0.6rem', letterSpacing: 1.5 }}
           >
-            What is DevFest?
+            What is Devfest?
           </h4>
           <h3 className={clsx('h4', styles.heading, styles.mainHeading)}>
             Before you ask
           </h3>
 
           <p>
-            GDG DevFest Casablanca x Settat brings together the world class
+            GDG Devfest Casablanca x Settat brings together the world class
             experts in AI/ML, Android, Web and Cloud technologies to Moroccan
             for 2 days of sessions, workshops and showcases.
           </p>
 
           <p>
-            Our team creates DevFest to be the best place for experience sharing
+            Our team creates Devfest to be the best place for experience sharing
             in a phenomenal atmosphere.
           </p>
         </div>

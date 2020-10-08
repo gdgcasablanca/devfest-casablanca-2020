@@ -11,11 +11,7 @@ const Ticket = memo(function Ticket() {
       <Wrapper variant={variants.narrow}>
         <div className={styles.innerTicket}>
           <h2 className={clsx('h5', styles.heading)}>THIS IS A FREE EVENT</h2>
-          <Link
-            className={clsx('inverted', styles.button)}
-            href='https://gdg.community.dev/events/details/google-gdg-casablanca-presents-devfest-casablanca-x-settat-2020/'
-            external
-          >
+          <Link className={clsx('inverted', styles.button)} href='/tickets'>
             RSVP Here
           </Link>
         </div>
