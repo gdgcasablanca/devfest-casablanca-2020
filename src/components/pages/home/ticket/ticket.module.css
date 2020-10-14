@@ -1,12 +1,14 @@
 .ticket {
-  background-color: var(--d-blue-400);
-  color: white;
+  color: var(--d-blue-400);
 
   padding: 3rem 0;
 }
 
 .innerTicket {
   text-align: center;
+  position: relative;
+
+  padding-block-end: 4em;
 }
 
 .heading {
@@ -16,15 +18,19 @@
 .button {
   padding: 0.8rem 1rem;
   border: 1px solid;
+  border-color: var(--d-blue-400);
   display: inline-block;
   margin-block-start: 1rem;
   line-height: 1;
   text-decoration: none;
   border-radius: 6px;
+
+  transition: 50ms ease;
+  transition-property: color, background-color;
 }
 
 .button:hover,
 .button:focus {
-  background-color: white;
-  color: var(--d-blue-400);
+  color: white;
+  background-color: var(--d-blue-400);
 }

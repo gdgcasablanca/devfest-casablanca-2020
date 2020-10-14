@@ -1,5 +1,6 @@
 import React, { memo } from 'react'
 import Layout from '../../layout/layout'
+import WindowCard from '../../ui/window-card/window-card'
 
 import BeforeYouAsk from './before-you-ask/before-you-ask'
 import HeroSection from './hero-section/hero-section'
@@ -11,8 +12,8 @@ const Home = memo(function Home() {
   return (
     <Layout>
       <HeroSection />
-      <Ticket />
       <BeforeYouAsk />
+      <Ticket />
     </Layout>
   )
 })
