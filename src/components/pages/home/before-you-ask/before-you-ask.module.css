@@ -10,7 +10,20 @@
 }
 
 .innerAsk {
-  display: flex;
-
   padding: 4rem 0;
+}
+
+.what p {
+  max-width: 52ch;
+}
+
+@media (min-width: 789px) {
+  .askBody {
+    display: flex;
+    justify-content: space-between;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -1,0 +1,85 @@
+.frame {
+  position: relative;
+  z-index: 0;
+  width: auto;
+  margin: 26px;
+  display: inline-block;
+}
+
+.frame + .frame {
+  margin-block-start: 36px;
+}
+
+.contentWrapper {
+  --radius: calc(4px + 0.5vw);
+  border-radius: var(--radius);
+  box-shadow: 0 0 20px 8px rgba(6, 6, 6, 0.18);
+}
+
+.frameBar {
+  background-color: var(--d-yellow-400);
+  --bar-height: calc(12px + 1vw);
+  height: var(--bar-height);
+  border-radius: var(--radius) var(--radius) 0 0;
+
+  display: flex;
+  align-items: center;
+}
+
+.frameBar:after {
+  content: '';
+  position: relative;
+  display: block;
+  --size: calc(var(--bar-height) / 2);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background-color: var(--d-red-400);
+  margin-inline-start: calc(var(--size) / 2);
+}
+
+.childrenWrapper {
+  background-color: #fff;
+  padding: 16px 24px;
+  color: var(--d-blue-400);
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+.frameShadow {
+  --border-size: calc(2px + 0.2vw);
+  --x: 14;
+  --y: 18;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px));
+  border: var(--border-size) solid var(--d-yellow-400);
+  z-index: -1;
+}
+
+.square {
+  --square-inset: calc(calc(var(--size) / -2) - calc(var(--border-size) / 2));
+  --size: calc(2px + 0.8vw);
+  width: var(--size);
+  height: var(--size);
+
+  background-color: var(--d-yellow-400);
+  position: absolute;
+}
+
+.squareRT {
+  top: var(--square-inset);
+  right: var(--square-inset);
+}
+.squareLT {
+  top: var(--square-inset);
+  left: var(--square-inset);
+}
+.squareRB {
+  bottom: var(--square-inset);
+  right: var(--square-inset);
+}
+.squareLB {
+  bottom: var(--square-inset);
+  left: var(--square-inset);
+}
